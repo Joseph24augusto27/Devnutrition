@@ -31,7 +31,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 5%;
-  background-color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -48,7 +49,7 @@ body {
 }
 
 .logo-img {
-  height: 3rem;
+  height: 10rem;
   margin-right: 1rem;
 }
 
@@ -407,33 +408,40 @@ body {
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
   .hero {
-    grid-template-columns: 1fr; /* Hero em coluna única em telas menores */
+    grid-template-columns: 1fr;
+    /* Hero em coluna única em telas menores */
     text-align: center;
   }
 
   .hero-content {
-    max-width: 100%; /* Hero content ocupa toda a largura */
+    max-width: 100%;
+    /* Hero content ocupa toda a largura */
   }
 
   .nav-links {
-    display: none; /* Esconde a navegação em telas menores */
+    display: none;
+    /* Esconde a navegação em telas menores */
   }
 
   .menu-toggle {
-    display: block; /* Mostra o botão de menu */
+    display: block;
+    /* Mostra o botão de menu */
   }
 
   .recipes-grid,
   .plans-grid,
   .tips-list {
-    grid-template-columns: 1fr; /* Grid em coluna única em telas menores */
+    grid-template-columns: 1fr;
+    /* Grid em coluna única em telas menores */
   }
 
   .blog-post {
-    grid-template-columns: 1fr; /* Blog post em coluna única */
+    grid-template-columns: 1fr;
+    /* Blog post em coluna única */
   }
 
   .blog-img {
-    max-height: none; /* Remove a limitação de altura */
+    max-height: none;
+    /* Remove a limitação de altura */
   }
 }
